@@ -3,6 +3,11 @@
     margin: 0px;
 }
 
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/Norse-Bold.otf') format('opentype');
+}
+
 body{
     display: flex;
     flex-wrap: wrap;
@@ -16,8 +21,35 @@ body{
     background-repeat: no-repeat;
 
     flex-grow: 0.8;
+    position: relative; 
 }
 
+.logo-content{
+    color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 0px;
+    font-weight: bold;
+
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    width: 100%;
+}
+
+.logo{
+    width: 110px;
+    height: 150px;
+}
+
+.odin-h1{
+    font-size: 5rem;
+    font-family: 'MyCustomFont';
+}
 .right-body{
     flex-grow: 2;
 }

@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.left-body{
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    flex-grow: 0.8;
+}
+
+.right-body{
+    flex-grow: 2;
+}

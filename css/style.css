@@ -8,12 +8,18 @@
   src: url('/Norse-Bold.otf') format('opentype');
 }
 
+:root {
+  --green: rgb(39, 128, 39);
+  --form-padding: 40px;
+}
+
 body{
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
 }
 
+/* Left half */
 .left-body{
     background-image: url('/images/background.jpg');
     background-size: cover;
@@ -21,6 +27,7 @@ body{
     background-repeat: no-repeat;
 
     flex-grow: 0.8;
+    min-width: 30%;
     position: relative; 
 }
 
@@ -50,6 +57,98 @@ body{
     font-size: 5rem;
     font-family: 'MyCustomFont';
 }
+
+/* Right half */
 .right-body{
+    margin: 70px 0px;
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* padding: 40px; */
+    box-sizing: content-box;
+
+    background-color: white;
+}
+
+.inputs-grouping{
+    display: flex;
+    gap: 30px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 12px;
+}
+input{
+  border: 2px solid #E5E7EB; /* Light gray */
+  padding: 8px;
+  width: 250px;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus:valid {
+  border-color: #2563eb; /* Blue-600 */
+  box-shadow: 2px 2px 5px rgba(37, 99, 235, 0.3);
+}
+
+input:focus:invalid {
+  border-color: red;
+  box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.3);
+}
+
+#form-legend{
+    font-size: 30px;
+}
+
+#field-container{
+    box-shadow: 2px 2px 5px rgba(37, 99, 235, 0.3);
+    background-color: #E5E7EB;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: content-box;
+
+    padding: 40px;
+}
+
+#form-footer{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: start;
+}
+#heading-para{
+    width: 60%;
+}
+
+#heading-signup-line, #heading-para, #heading-baseline, #form-footer{
+    padding: 0px var(--form-padding);
+}
+
+#heading-baseline{
+    margin-top: 20px;
+}
+
+
+#create-btn{
+    color: #E5E7EB;
+    background-color: var(--green);
+    padding: 10px 40px;
+    width: 200px;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: none;
+}
+
+#login-link{
+    color: var(--green);
+    text-decoration: none;
 }

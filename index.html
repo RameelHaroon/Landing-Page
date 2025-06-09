@@ -13,6 +13,89 @@
         <h1 class="odin-h1">ODIN</h1>
       </div>
     </div>
-    <div class="right-body"></div>
+    <div class="right-body">
+      <div class="form-header">
+        <h2 id="heading-para">
+          This is not a real onlice service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </h2>
+        <h2 id="heading-signup-line">Sign up <em>now</em> to get started</h2>
+        <h2 id="heading-baseline">You <em>know</em> you want to</h2>
+      </div>
+      <div class="form-content">
+        <form action="#" method="post">
+          <div id="field-container">
+            <legend id="form-legend">Let's do this!</legend>
+            <div class="inputs-grouping">
+              <div class="input-group">
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="fname" required />
+              </div>
+
+              <div class="input-group">
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="lname" required />
+              </div>
+            </div>
+
+            <div class="inputs-grouping">
+              <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="phone">PHONE NUMBER</label>
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  pattern="^03\d{9}$"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="inputs-grouping">
+              <div class="input-group">
+                <label for="password">PASSWORD</label>
+                <input
+                  type="text"
+                  id="password"
+                  name="password"
+                  minlength="8"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="confirm-password">CONFIRM PASSWORD</label>
+                <input
+                  type="text"
+                  id="confirm-password"
+                  name="confirm-password"
+                  minlength="8"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="form-footer">
+            <input type="submit" value="Create Account" id="create-btn" />
+
+            <p>
+              Already have an account? <a href="#" id="login-link">Log in</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
